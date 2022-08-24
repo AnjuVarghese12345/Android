@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/androidimg2"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TableRow tools:ignore="ExtraText"
+        android:id="@+id/row1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="45dp"
+        android:paddingEnd="45dp">
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="100dp"
+            android:text="@string/user_name"
+            android:textColor="@color/purple_700"
+                android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:inputType="text"
+            android:padding="@dimen/cardview_default_radius"
+            tools:ignore="LabelFor"
+            android:textSize="30sp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ExtraText"
+        android:paddingStart="45dp"
+        android:paddingEnd="45dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="100dp"
+            android:text="@string/password"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:inputType="textPassword"
+            android:padding="@dimen/cardview_default_radius"
+            android:textSize="30sp"
+            tools:ignore="LabelFor" />
+    </TableRow>
+
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText"
+    android:paddingTop="50dp"
+    android:paddingStart="75dp"
+    android:paddingEnd="45dp">
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:text="@string/male"
+        tools:ignore="DuplicateIds" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/female" />
+</TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        android:paddingStart="150dp"
+        android:paddingEnd="45dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/submit" />
+
+
+    </TableRow>
+
+</TableLayout>
