@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">spinner</string>
+    <string-array name="planets_array">
+        <item>London</item>
+        <item>Paris</item>
+        <item>Dubai</item>
+        <item>Chennai</item>
+    </string-array>
+</resources>
